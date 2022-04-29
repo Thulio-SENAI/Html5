@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= bac, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ background-image: url(bcgp.jpg)}
+
+        .center{
+            position: relative;
+            margin-right: 5%;
+            width: 40%;
+            height: 60%;    
+        }
+
+        
+    </style>
+</head>
+<body>
+    <script>
+
+        var cont = 1
+
+        setInterval(mudarimagem, 3000)
+        function mudarimagem(){
+            var elemento = document.getElementById("img1")
+            if(cont==1){
+                elemento.src = "zaraki.jpg"
+            }
+            if(cont==2){
+                elemento.src = "yamammoto.jpg"
+            }
+            if(cont==3){
+                elemento.src = "kisuske.jpg"
+            }
+            if(cont==4){
+                elemento.src = "byakuya.jpg"
+            }
+            if(cont==5){
+                elemento.src = "kurosaki.jpg"
+                cont =0
+            }
+
+            cont++
+        }
+    </script>
+    <img id="img1" src="zaraki.jpg" alt="" class="center" ">
+</body>
+</html>
